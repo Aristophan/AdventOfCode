@@ -1,6 +1,6 @@
-numbers = list(map(str,range(10)))
 data = [l.strip() for l in open('input.txt')]
 #part1
+numbers = list(map(str,range(10)))
 X = [[int(char) for char in l if char in numbers]for l in data]
 print(sum([10*l[0]+l[-1] for l in X]))
 
